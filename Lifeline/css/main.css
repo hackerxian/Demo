@@ -1,0 +1,65 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    word-wrap: break-word;
+    color: #222;
+    /*background: #ccc;*/
+    background: #FCFCFC;
+}
+
+.loading img {
+    width: 50px;
+    height: 50px;
+}
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.card, .loading{
+    margin: 15px ;
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 1px 0 #f2f4f5;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    /*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
+}
+
+.card .button {
+    border: none;
+    border-radius: 5px;
+    border-color: #EEE;
+    text-decoration: none;
+    text-align: center;
+    height: 40px;
+    width: 45%;
+    font-size: 10px;
+    padding: 0 5px;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    background-color: #A5DE37;
+    outline:none;
+}
+.button-wrapper {
+    justify-content: space-around;
+}
+.loading {
+    margin-top: 0;
+    justify-content: center;
+}
