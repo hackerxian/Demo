@@ -37,7 +37,7 @@ body {
     /*box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);*/
 }
 
-.card .button {
+.button {
     border: none;
     border-radius: 5px;
     border-color: #EEE;
@@ -55,6 +55,16 @@ body {
     transition-duration: .3s;
     background-color: #A5DE37;
     outline:none;
+    box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset,0 0 6px rgba(0,0,0,.2) inset;
+}
+
+.button-disabled {
+    opacity: .5;
+    box-shadow: none;
+}
+
+.button-active-disabled {
+    box-shadow: none;
 }
 .button-wrapper {
     justify-content: space-around;

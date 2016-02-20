@@ -30,7 +30,6 @@
         //    redirect: 2
         //}]
     }];
-
     var $loading  = $('.loading');
 
     doTimeTask(data[0]);
@@ -50,12 +49,17 @@
     }
 
     function showOptions(options) {
-        var html = '<div class="card button-wrapper"> <button class="button" data-id="'+ options[0].redirect +'">'+ options[0].text +'</button> <button class="button" data-id="'+ options[1].redirect +'">' + options[1].text +'</button></div>';
+        var html = '<div class="card button-wrapper"> <button type="button" class="button" data-id="'+ options[0].redirect +'">'+ options[0].text +'</button> <button type="button" class="button" data-id="'+ options[1].redirect +'">' + options[1].text +'</button></div>';
         $('.container').append(html);
     }
 
     $(document).on('click', '.card .button', function(e){
         var $this = $(e.target);
+        //set current active button disabled
+        $this.addClass('button-active-disabled').prop('disabled', true);
+        //set siblings button disabled
+        $this.siblings('.button').addClass('button-disabled').prop('disabled', true);
+
         var id = $this.data('id');
         var content = data[id];
         doTimeTask(content);
