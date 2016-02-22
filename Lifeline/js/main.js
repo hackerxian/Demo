@@ -3,10 +3,10 @@ module.exports = function() {
         id: 0,
         texts: ['1', '2', '3', '4', '5'],
         options: [{
-            text: 'yes',
+            text: '这是一个测试yes',
             redirect: 1
         }, {
-            text: 'no',
+            text: '测试什么',
             redirect: 2
         }]
     }, {
