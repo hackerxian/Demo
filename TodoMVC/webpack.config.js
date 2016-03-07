@@ -10,7 +10,7 @@ module.exports = {
   resolve: {
     extensions: ['', '.js', '.jsx']
   },
-  devtool: 'source-map',
+  //devtool: 'source-map',
   module: {
     loaders: [
       {
@@ -18,7 +18,7 @@ module.exports = {
         loader: 'babel-loader',
         exclude: /node_modules/,
         query: {
-          presets: ['es2015', 'react']
+          presets: ['react', 'es2015', 'stage-0']
         }
       }
     ]

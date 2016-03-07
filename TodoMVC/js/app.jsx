@@ -32,11 +32,11 @@ class TodoApp extends React.Component {
 		router.init('/');
 	}
 
-	handleChange(event) {
+	handleChange = (event) => {
 		this.setState({newTodo: event.target.value});
 	}
 
-	handleNewTodoKeyDown(event) {
+	handleNewTodoKeyDown = (event) => {
 		if (event.keyCode !== ENTER_KEY) {
 			return;
 		}
@@ -152,8 +152,8 @@ class TodoApp extends React.Component {
 							className="new-todo"
 							placeholder="What needs to be done?"
 							value={this.state.newTodo}
-							onKeyDown={this.handleNewTodoKeyDown.bind(this)}
-							onChange={this.handleChange.bind(this)}
+							onKeyDown={this.handleNewTodoKeyDown}
+							onChange={this.handleChange}
 							autoFocus={true}
 					/>
 				</header>
