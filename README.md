@@ -16,6 +16,6 @@
 
 ## SimulateTinder[Deprecated]
    
-   - Tinder slide
+   - Tinder slider, left and right slide
    - use angularJs
-   - demo: [http://alinebay.com/TodoMVC/](http://alinebay.com/SimulateTinder/)
+   - demo: [http://alinebay.com/SimulateTinder/](http://alinebay.com/SimulateTinder/)
