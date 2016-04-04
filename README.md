@@ -14,3 +14,8 @@
    - use react + ES6 + webpack
    - demo: [http://alinebay.com/TodoMVC/](http://alinebay.com/TodoMVC/#/)
 
+## SimulateTinder[Deprecated]
+   
+   - Tinder slide
+   - use angularJs
+   - demo: [http://alinebay.com/TodoMVC/](http://alinebay.com/SimulateTinder/)

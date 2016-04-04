@@ -1,0 +1,24 @@
+<!doctype html>
+<html data-ng-app="myApp">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body data-ng-controller="MyCtrl">
+	<div class="frame">
+		<div id="like"></div>
+		<div id="dislike"></div>
+		<div data-ng-repeat="img in images">
+			<div id="{{img.id}}" class="container" data-hm-dragleft="dragLeft($event)" data-hm-dragright="dragRight($event)"
+				data-hm-drag="dragged($event)" data-hm-release="released($event)">
+			</div>
+		</div>
+	</div>
+	<script src="js/angular.min.js"></script>
+	<script src="js/hammer.min.js"></script>
+	<script src="js/gestures.min.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

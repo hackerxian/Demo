@@ -1,0 +1,20 @@
+{
+    "name":"Simulate-Tinder",
+    "version":"0.0.1",
+    "main":"app.js",
+    "dependencies":{
+        "gulp-concat": "*",
+        "gulp-uglify": "*",
+        "gulp-rename": "*",
+        "gulp-minify-css": "*"
+    },
+    "devDependencies":{
+        "gulp": "*"
+    },
+    "engines":{
+        "node":">=0.8.0",
+        "npm":">=1.1.6"
+    },
+    "scripts":{
+    }
+}
