@@ -14,6 +14,11 @@
    - use react + ES6 + webpack
    - demo: [http://alinebay.com/TodoMVC/](http://alinebay.com/TodoMVC/#/)
 
+## TodoMVC-Angular2
+
+   - inspired by [tastejs/TodoMVC](http://todomvc.com/examples/react/#/)
+   - use angular2
+
 ## SimulateTinder[Deprecated]
    
    - Tinder slider, left and right slide
