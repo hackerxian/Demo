@@ -1,0 +1,34 @@
+<section class="todoapp">
+  <header class="header">
+    <h1>todos</h1>
+    <input class="new-todo" autofocus placeholder="What needs to be done?" #todo (keyup.enter)="addTodo(todo.value); todo.value=''">
+  </header>
+  <section class="main">
+    <input class="toggle-all" [checked]="allCompleted()" type="checkbox" *ngIf="todos.length" #toggleall (click)="toggleAll(toggleall.checked)">
+    <ul class="todo-list">
+      <li *ngFor="let todo of todos" [class.completed]="todo.completed" [class.editing]="todo.editing">
+        <div class="view">
+          <input class="toggle" type="checkbox" [checked]="todo.completed" (click)="toggleCompleted(todo)">
+          <label (dblclick)="editTodo(todo)">{{todo.title}}</label>
+          <button class="destroy" (click)="remove(todo)"></button>
+        </div>
+        <input class="edit" *ngIf="todo.editing" #edit [value]="todo.title" (blur)="stopEditing(todo, edit.value)" (keyup.enter)="updateTodo(todo, edit.value);" (keyup.escape)="cancelEditing(todo)">
+      </li>
+    </ul>
+  </section>
+  <footer class="footer" *ngIf="getRemaining().length || getCompleted().length">
+    <span class="todo-count"><strong>{{getRemaining().length}}</strong> {{getRemaining().length === 1 ? 'item' : 'items'}} left</span>
+    <ul class="filters">
+      <li>
+        <a routerLink="/" routerLinkActive="selected" [routerLinkActiveOptions]="{ exact: true }"> All</a>
+      </li>
+      <li>
+        <a routerLink="/active" routerLinkActive="selected">Active</a>
+      </li>
+      <li>
+        <a routerLink="/completed" routerLinkActive="selected">Completed</a>
+      </li>
+    </ul>
+    <button class="clear-completed" *ngIf="getCompleted().length" (click)="clearComplete()">Clear completed</button>
+  </footer>
+</section>

@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DnD</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="box" draggable="true" ondragstart="handleDragStart(event)">test</div>
+    <div class="container" ondragenter="handleDragEnter(event)" ondragleave="handleDragLeave(event)" ondragend="handleDragEnd(event)" ondrop="handleDrop(event)" ondragover="handleDragOver(event)">
+        <div class="over">放在这里</div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
