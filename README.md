@@ -17,7 +17,7 @@
 ## TodoMVC-Angular2
 
    - inspired by [tastejs/TodoMVC](http://todomvc.com/examples/react/#/)
-   - use angular2
+   - use Angular2 + TypeScript
 
 ## SimulateTinder[Deprecated]
    
